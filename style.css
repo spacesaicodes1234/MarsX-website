@@ -22,6 +22,13 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: GlitchyFont;
+  src: url(/RubikGlitch-Regular.ttf);
+  font-weight: bold;
+}
+
+
 .logo {
   width: 50px;
   height: 50px;
@@ -239,6 +246,7 @@ html {
   text-decoration: none;
   font-size: 18px;
   color: black;
+  font-family: "RubikGlitch";
   display: block;
 }
 
