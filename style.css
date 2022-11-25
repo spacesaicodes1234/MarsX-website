@@ -23,8 +23,8 @@
 }
 
 @font-face {
-  font-family: GlitchyFont;
-  src: url(/RubikGlitch-Regular.ttf);
+  font-family: glitch;
+  src: url(/glitch-regular.ttf);
   font-weight: bold;
 }
 
@@ -154,7 +154,7 @@ body {
   overflow: hidden;
   background-color: rgb(51, 51, 51);
   border-radius: 50px;
-  font-family: "caveat_b";
+  font-family: "glitch";
   font-size: larger;
 }
 
@@ -212,48 +212,6 @@ html {
     border: 1px solid #ccc;
   }
 }
-
-#myInput {
-  background-image: url("/search_icon.png");
-  background-size: 17px;
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  border-radius: 50px;
-  position: absolute;
-  left: 290px;
-  top: 180px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: auto;
-  width: max-content;
-  position: absolute;
-  left: -510px;
-  right: 1px;
-  bottom: -400px;
-  top: 230px;
-}
-
-#myUL li a {
-  margin-top: -1px;
-  background-color: #f6f6f6;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  font-family: "GlitchyFont";
-  display: block;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-
 li {
   position: relative;
   display: block;
@@ -267,7 +225,7 @@ li {
 
 @for $i from 1 through $total-items {
   li:nth-child(#{$i}) {
-    animation-delay: 0.25s * $i;
+    animation-delay: 0.5s * $i;
   }
 }
 
